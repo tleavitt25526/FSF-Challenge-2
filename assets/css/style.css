@@ -7,11 +7,6 @@ header {
 
 header h1 {
     margin: 8px 16px;
-    
-}
-
-header ul {
-    
 }
 
 header ul li {
@@ -22,4 +17,35 @@ header ul li {
 header ul li:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    background-image: linear-gradient(to top, #A91D3A, #C73659);
+    border-bottom: 5px solid #151515;
+}
+
+.about-me .caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me img {
+    width: 150px;
+    height: 150px;
+}
+
+.about-me p {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    
+}
+
+footer {
+    height: 800px;
 }

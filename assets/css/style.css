@@ -21,9 +21,10 @@ header ul li:hover {
 
 .about-me {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 250px;
     background-image: linear-gradient(to top, #A91D3A, #C73659);
+    border-bottom: 5px solid #151515;
 }
 
 .about-me .caption{
@@ -34,8 +35,8 @@ header ul li:hover {
 }
 
 .about-me img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 .about-me p {

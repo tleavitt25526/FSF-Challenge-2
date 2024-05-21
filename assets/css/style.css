@@ -24,7 +24,7 @@ header ul li:hover {
     justify-content: space-evenly;
     height: 250px;
     background-image: linear-gradient(to top, #A91D3A, #C73659);
-    border-bottom: 5px solid #151515;
+    border-bottom: 1px solid #151515;
 }
 
 .about-me .caption{
@@ -43,7 +43,70 @@ header ul li:hover {
     display: flex;
     align-items: center;
     width: 50%;
-    
+    margin-bottom: 10px;
+}
+
+.my-work {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #A91D3A, #C73659);
+    border-bottom: 1px solid #151515;
+}
+
+.my-work h2 {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+}
+
+.my-work ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my-work img {
+    width: 150px;
+    height: 150px;
+}
+
+.my-work li {
+    display: flex;
+    margin: 50px 250px;
+    flex: 0 1 100%;
+    justify-content: space-around;
+}
+
+.my-work li p {
+    display: flex;
+    width: 300px;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #A91D3A, #C73659);
+}
+
+.contact-me h2 {
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+.contact-me ul {
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+.contact-me em {
+    color: darkblue;
+    font-style: normal;
+}
+
+.contact-me em:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer {

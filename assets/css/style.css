@@ -1,8 +1,25 @@
+:root {
+    --bg-color: White;
+    --altbg-color: Gainsboro;
+    --red-black: #151515;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2 {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: White;
+
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #151515;
-    color: #EEEEEE;
+    background-color: var(--red-black);
+    color: White;
 }
 
 header h1 {
@@ -19,96 +36,106 @@ header ul li:hover {
     cursor: pointer;
 }
 
-.about-me {
+#about-me {
     display: flex;
     justify-content: space-evenly;
     height: 250px;
-    background-image: linear-gradient(to top, #A91D3A, #C73659);
-    border-bottom: 1px solid #151515;
+    background-color: var(--bg-color);
 }
 
-.about-me .caption{
+#about-me .caption{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+#about-me .caption h2{
+    margin-bottom: 10px;
+}
 
-.about-me img {
+#about-me img {
     width: 150px;
     height: 150px;
 }
 
-.about-me p {
+#about-me p {
     display: flex;
     align-items: center;
     width: 50%;
     margin-bottom: 10px;
 }
 
-.my-work {
+#my-work {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    background-image: linear-gradient(to top, #A91D3A, #C73659);
-    border-bottom: 1px solid #151515;
+    background-color: var(--altbg-color);
 }
 
-.my-work h2 {
+#my-work h2 {
+    margin: 10px;   
     display: flex;
     flex: 0 1 100%;
     justify-content: center;
 }
 
-.my-work ul {
+#my-work ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.my-work img {
+#my-work img {
     width: 150px;
     height: 150px;
 }
 
-.my-work li {
+#my-work li {
     display: flex;
     margin: 50px 250px;
     flex: 0 1 100%;
     justify-content: space-around;
 }
 
-.my-work li p {
+#my-work li p {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
 }
 
-.contact-me {
+#contact-me {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to top, #A91D3A, #C73659);
+    background-color: var(--bg-color);
 }
 
-.contact-me h2 {
+#contact-me h2 {
     margin-left: 100px;
     margin-top: 25px;
 }
 
-.contact-me ul {
+#contact-me ul {
     margin-left: 100px;
     margin-bottom: 25px;
 }
 
-.contact-me em {
+#contact-me em {
     color: darkblue;
     font-style: normal;
 }
 
-.contact-me em:hover {
+#contact-me em:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 footer {
-    height: 800px;
+    display: flex;
+    background-color: var(--red-black);
+    color: white;
+}
+
+footer h2 {
+    margin: 10px;
 }
